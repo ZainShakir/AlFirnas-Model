@@ -43,7 +43,7 @@ def predict():
         return jsonify({
             'predictions': predictions,
             'annotated_image_base64': image_base64
-        })
+        }),200
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
